@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<head>
+    <title>Coding Challenges Site Info</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!--    <link rel='shortcut icon' type='image/x-icon' href='./static/favicon.ico' />-->
+    <div w3-include-HTML="stylesheets.html"></div>
+    <style>
+        body {
+            background: #c9c9c9;
+        }
+        #main-div {
+            text-align: center;
+        }
+
+        #main-title {
+            padding-top: 15px;
+            font-size: calc(1.6rem + 1.5vw);
+        }
+
+        #sub-subheading {
+            font-size: calc(0.7rem + 0.8vw);
+            color: #033091;
+        }
+
+        hr {
+            border: 2px solid #3d87ff;
+            margin-top: 0;
+        }
+        #demo-video {
+            margin-bottom: 25px;
+            margin-top: 8px;
+        }
+        #video-box {
+            background: #619eff;
+        }
+        #top-heading-box {
+            background: #9dc1fc;
+        }
+        #heading-text {
+            padding-top: 10px;
+            font-weight: 500;
+        }
+        #intro-box, #how-to-box, #features-box {
+            background: white;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .list-group-item, #paragraph-text {
+            padding-bottom: 15px;
+            padding-left: 3%;
+            padding-right: 3%;
+            font-size: calc(0.9rem + 0.8vw);
+        }
+        #instructions-column {
+            text-align: left;
+        }
+        #site-img {
+            width: 95%;
+            border: 1px solid gray;
+            margin-top: 15px;
+        }
+        #pic-col {
+            height: 100%;
+        }
+        figcaption {
+            color: gray;
+            font-size: calc(0.5rem + 0.9vw)
+        }
+        figure {
+            padding-left: 5%;
+        }
+        #features-accordion {
+            padding-bottom: 15px;
+        }
+        .accordion-button {
+            font-size: calc(0.8rem + 0.8vw);
+        }
+        .accordion-body {
+            font-size: calc(0.7rem + 0.7vw);
+        }
+        #copyright-msg {
+            color: gray;
+            font-size: calc(0.7rem + 0.5vw)
+        }
+    </style>
+</head>
+<body>
+    <div id="main-div">
+        <!-- Top heading with title -->
+        <div class="jumbotron" id="top-heading-box">
+            <h1 id="main-title">My Coding Challenge Website</h1>
+            <p id="sub-subheading">Everything there is to know about my site, including a video demo!</p>
+            <hr>
+        </div>
+        <!-- Introduction -->
+        <div class="jumbotron" id="intro-box">
+            <h1 class="display-6" id="heading-text">Introduction</h1>
+            <p id="paragraph-text">My coding challenge website allows a user to work through fifteen different Python exercises that are sorted into three difficulty categories: beginner, intermediate, and advanced. These exercises are perfect for people who have never worked in Python before as well as people who have experience but are a bit rusty. Through these exercises, the user will work with strings, lists, regular expressions, sorting algorithms, binary search algorithm, and more.</p>
+        </div>
+        <!-- How to -->
+        <div class="jumbotron" id="how-to-box">
+            <h1 class="display-6" id="heading-text">How To</h1>
+            <div class="row align-items-start">
+                <div class="col" id="pic-col">
+                    <figure>
+                        <img id="site-img" src="static/home_page.png"></img>
+                        <figcaption>Home Page</figcaption>
+                    </figure>
+                    <figure>
+                        <img id="site-img" src="static/challenge_page.png"></img>
+                        <figcaption>Challenge Page for "Hello, World!"</figcaption>
+                    </figure>
+                </div>
+                <div class="col" id="instructions-column">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Decide which exercise you want to do and then click the blue "Begin" button.</li>
+                      <li class="list-group-item">You will be brought to the challenge page for the exercise you chose. On the right is a description of the exercise, some example inputs and outputs, a blue "Run Code" button, and a gray "Show Solution" button. On the left is a code editor with the function definition already there for you with an indented second line to start your code.</li>
+                      <li class="list-group-item">Now you can begin coding your solution to the exercise. Click the "Run Code" button when you are ready to run your solution through the test suite.</li>
+                      <li class="list-group-item">Output appears below the code editor detailing how many of the tests your code passed. If it failed any tests, the output will include the input, correct answer, and your answer for every failed test to help you debug your code. If there was an error in your code, the error message will appear in the output box instead.</li>
+                      <li class="list-group-item">If you get stuck, you can click the "Show Solution" button to populate the code editor with my example solution. There can be many different ways to solve these exercises, so feel free to create solutions that differ from mine.</li>
+                      <li class="list-group-item">When you wish to go back to the home page, simply click the "Back" button in the top left corner of the screen.</li>
+                    </ul>
+                </div>
+              </div>
+        </div>
+        <!-- Video Demo -->
+        <div class="jumbotron" id="video-box">
+            <h1 class="display-6" id="heading-text">Video Demo</h1>
+            <center>
+                <video id="demo-video" width="90%" controls>
+                  <source src="static/Demo_Coding_Challenges.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+            </center>
+        </div>
+        <!-- Features -->
+        <div class="jumbotron" id="features-box">
+            <h1 class="display-6" id="heading-text">Features</h1>
+            <div class="accordion" id="features-accordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Syntax Highlighting
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#features-accordion">
+                  <div class="accordion-body">
+                    <strong>The code editor includes syntax highlighting for Python.</strong> This is easily seen in the video demonstration. Strings, key words (like return, def, and True), function names, numbers, and more are highlighted in different colors to make the coding process so much easier for the user.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Error Handling with Error Messages
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#features-accordion">
+                  <div class="accordion-body">
+                    <strong>Any errors in user code are caught, and the user receives a helpful error message.</strong> When the user clicks the "Run Code" button, the backend for the website handles any errors that arise in the user's code and then projects a useful error message back to the user in the output box. This makes it easier for the user to debug their code. Failing silently is the worst kind of failure, which is why I implemented these descriptive error messages.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Code Editor Memory
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#features-accordion">
+                  <div class="accordion-body">
+                    <strong>If you leave a challenge and go back to the home page then come back to the same challenge, the code editor remembers what was written there before you left. </strong> I always accidentally go back to the previous page when I'm working on my laptop (trackpads make that so easy these days). In order to combat any accidental backtracking in my website, I made it so that the work you did is remembered by the challenge if you get out of it and then come back in. This only works if you reopen the same challenge. The code in the code editor does not persist if you open a new challenge.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Robust Test Suites
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#features-accordion">
+                  <div class="accordion-body">
+                    <strong>Your code gets run through a robust test suite to verify functionality.</strong> As any programmer knows, testing is extremely important for finding mistakes in code. My test suites include edge cases to make sure there aren't any small, easily missed bugs in your code. Tested code is better code!
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- Copyright message -->
+        <p id="copyright-msg">© 2021 Brittany Ladd. All Rights Reserved.</p>
+    </div>
+</body>
+</html>
+
