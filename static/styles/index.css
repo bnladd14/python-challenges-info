@@ -4,4 +4,101 @@ Date:    September-October 2021
 Purpose: This file has the styles for the home page.
 */
 
+body {
+    background: #c9c9c9;
+}
 
+#main-div {
+    text-align: center;
+}
+
+#main-title {
+    padding-top: 15px;
+    font-size: calc(1.6rem + 1.5vw);
+}
+
+#sub-subheading {
+    font-size: calc(0.7rem + 0.8vw);
+    color: #033091;
+}
+
+hr {
+    border: 2px solid #3d87ff;
+    margin-top: 0;
+}
+
+#demo-video {
+    margin-bottom: 25px;
+    margin-top: 8px;
+}
+
+#video-box {
+    background: #619eff;
+}
+
+#top-heading-box {
+    background: #9dc1fc;
+}
+
+#heading-text {
+    padding-top: 10px;
+    font-weight: 500;
+}
+
+#intro-box, #how-to-box, #features-box {
+    background: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.list-group-item, #paragraph-text {
+    padding-bottom: 15px;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: calc(0.9rem + 0.8vw);
+}
+
+#instructions-column {
+    text-align: left;
+}
+
+#site-img {
+    width: 95%;
+    border: 1px solid gray;
+    margin-top: 15px;
+}
+
+#pic-col {
+    height: 100%;
+}
+
+figcaption {
+    color: gray;
+    font-size: calc(0.5rem + 0.9vw)
+}
+
+figure {
+    padding-left: 5%;
+}
+
+#features-accordion {
+    padding-bottom: 15px;
+}
+
+.accordion-button {
+    font-size: calc(0.8rem + 0.8vw);
+}
+
+.accordion-body {
+    font-size: calc(0.7rem + 0.7vw);
+}
+
+#copyright-msg {
+    color: gray;
+    font-size: calc(0.7rem + 0.5vw)
+}
+
+iframe {
+    width: 90%;
+    height: calc(50vw)
+}
