@@ -4,21 +4,4 @@ Date:    September-October 2021
 Purpose: This file has the styles for the home page.
 */
 
-#main-div {
-    text-align: center;
-}
 
-#main-title {
-    padding-top: 15px;
-    font-size: calc(1.6rem + 1.5vw);
-    color: #4a4a4a;
-}
-
-#sub-subheading {
-    font-size: calc(0.7rem + 0.8vw);
-    color: #9160d1;
-}
-
-hr {
-    border: 1px solid black;
-}
